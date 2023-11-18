@@ -70,7 +70,7 @@ const Login = () => {
         </div>
 
         <button className="sign-in-btn" onClick={handleLogin}>
-          sign in
+          Sign in
         </button>
         {loading && <LoadingSpinner />}
         {notification && (
