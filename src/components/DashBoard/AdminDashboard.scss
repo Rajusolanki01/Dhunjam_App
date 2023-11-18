@@ -1,0 +1,125 @@
+.admin-dashboard {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #030303;
+  color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .info input {
+    padding: 7px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .radio-group {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    margin-left: 6rem;
+  }
+
+  .radio-group input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    background-color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    transform: scale(0.7);
+  }
+
+  .info-2 input {
+    width: 250px;
+    height: 35px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .info-3 input {
+    width: 55px;
+    height: 33px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .graph-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+  }
+
+  .radio-group input[type="radio"]:checked {
+    background-color: #6741d9;
+  }
+
+  .info input:disabled,
+  .info-2 input:disabled,
+  .info-3 input:disabled,
+  .radio-group input[type="radio"]:disabled {
+    background-color: #c2c2c2;
+    border: 1px solid #c2c2c2;
+  
+  }
+ 
+}
+
+@media only screen and (max-width: 600px) {
+  .info input,
+  .info-2 input,
+  .info-3 input {
+    width: 100%; 
+    margin-bottom: 10px; 
+  }
+
+  .radio-group {
+    margin-left: 0; 
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1024px) {
+  .info input,
+  .info-2 input,
+  .info-3 input {
+    width: 100%; 
+    margin-bottom: 10px; 
+  }
+
+  .radio-group {
+    margin-left: 0; 
+  }
+}
+
+

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #030303;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 32px;
+  width: 600px;
+  color: #ffffff;
+}
+
+input,
+button {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.login,
+.save-button {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.graph-container {
+  width: 600px;
+}
+
+.element {
+  max-width: 300px;
+  width: 100%;
+}
+
+.text-field {
+  border: 1px solid #ffffff;
+}
+
+.text-field.greyed-out {
+  border-color: #c2c2c2;
+  color: #c2c2c2;
+}
+
+.save-button {
+  background-color: #6741d9;
+  width: 600px;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+  margin-top: 25px;
+}
+
+.save-button:hover,
+.save-button:active {
+  border: 1px solid #f0c3f1;
+}
+
+.save-button:disabled {
+  background-color: #c2c2c2;
+}
+
+label {
+  width: 290px;
+  font-size: 16px;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .login,
+  .save-button,
+  .graph-container,
+  .element,
+  .text-field,
+  label {
+    width: 100%;
+  }
+
+  .save-button {
+    margin-top: 15px;
+  }
+  body {
+    overflow-x: hidden; 
+    overflow-y: auto; 
+  }
+}
